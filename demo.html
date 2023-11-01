@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hamro Opportunity</title>
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+<!-- Nav bar -->
+
+
+<!-- Hero intro section -->
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="container has-text-left">
+      <h1 class="title">
+        Welcome to Hamro Opportunity!
+      </h1>
+      <h2 class="subtitle">
+        Empowering students to discover their true potential
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Main content -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline">
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-content">
+            <p class="title">
+              Academic
+            </p>
+            <p class="subtitle">
+              Explore resources for excellent adademic score 👩‍🎓
+            </p>
+            <div class="content">
+              <div class="dropdown is-right is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button is-primary" aria-haspopup="true" aria-controls="dropdown-menu" onclick="toggleDropdown(this)">
+                    <span>Select Class</span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu" style="display: none;">
+                  <div class="dropdown-content">
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 12
+                    </a>
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 11
+                    </a>
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 10
+                    </a>
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 9
+                    </a>
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 8
+                    </a>
+                    <hr class="dropdown-divider">
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Random
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-content">
+            <p class="title">
+              Extra-Curricular
+            </p>
+            <p class="subtitle">
+              Explore resources for your overall development 
+            </p>
+            <div class="content">
+              <div class="dropdown is-right is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button is-primary" aria-haspopup="true" aria-controls="dropdown-menu" onclick="toggleDropdown(this)">
+                    <span>Select Class</span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu" style="display: none;">
+                  <div class="dropdown-content">
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 12
+                    </a>
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 11
+                    </a>
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 10
+                    </a>
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 9
+                    </a>
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 8
+                    </a>
+                    <hr class="dropdown-divider">
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Random
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-content">
+            <p class="title">
+              Scholorship
+            </p>
+            <p class="subtitle">
+              Explore resources for Class 12 students
+            </p>
+            <div class="content">
+              <div class="dropdown is-right is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button is-primary" aria-haspopup="true" aria-controls="dropdown-menu" onclick="toggleDropdown(this)">
+                    <span>Select Class</span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu" style="display: none;">
+                  <div class="dropdown-content">
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 12
+                    </a>
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 11
+                    </a>
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 10
+                    </a>
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 9
+                    </a>
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 8
+                    </a>
+                    <hr class="dropdown-divider">
+                    <a href="#" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Random
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  Level  -->
+<section class="hero py-6">
+    <nav class="level">
+        <div class="level-item has-text-centered">
+            <i class="fas fa-user-graduate fa-2x"></i>
+          <div>
+            <p class="title">3,456</p>
+            <p class="heading pl-3"> Students Reached</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <i class="fas fa-university fa-2x"></i> 
+          <div>
+            <p class="title">123</p>
+            <p class="heading pl-3">College Reached</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <i class="fas fa-hands-helping fa-2x"></i> 
+          <div>
+            <p class="title">45</p>
+            <p class="heading pl-3">Organization Collaborated</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <i class="fas fa-star fa-2x"></i>
+          <div>
+            <p class="title">9/10</p>
+            <p class="heading pl-3"> Feedback</p>
+          </div>
+        </div>
+      </nav>
+      
+    </section>
+
+<!--  about-->
+<section class="section">
+    <div class="hero-body">
+        <div class="container has-text-left">
+            <h1><strong>Academic</strong></h1>
+            <p>here will get resouses materials for your excellent academic score</p>
+        </div>
+        <div class="container has-text-right ml-6">
+            <img src="https://www.karobarapp.com/_nuxt/img/photo5.228c1e8.png" width="300px" height="500px"> 
+        </div>
+    </div>
+    <div class="hero-body">
+        <div class="container has-text-right">
+            <h1><strong>Extra-Curricular</strong></h1>
+            <p>Engage yourself with wide range of activities you love !!</p>
+        </div>
+        <div class="container has-text-left ml-6">
+            <img src="https://www.karobarapp.com/_nuxt/img/photo5.228c1e8.png" width="300px" height="500px"> 
+        </div>
+    </div>
+    <div class="hero-body">
+        <div class="container has-text-left">
+            <h1><strong>Scholorship</strong></h1>
+            <p>Don't let your dream die due to financial barrier</p>
+        </div>
+        <div class="container has-text-right ml-6">
+            <img src="https://www.karobarapp.com/_nuxt/img/photo5.228c1e8.png" width="300px" height="500px"> 
+        </div>
+    </div>
+</section>
+  
+  
+<!-- Footer -->
+<hr class="navbar-divider">
+<footer class="footer" style="height: 50px;">
+  <div class="content has-text-centered">
+    
+    <div class="social-icons">
+      <a href="https://www.facebook.com/hamroopportunity" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/hamroopportunity" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.twitter.com/hamroopportunity" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitter"></i>
+      </a>
+      
+    </div>
+    <div class="pt-4">
+      <p>
+        <a href="#" target="_blank" rel="noopener noreferrer"><strong>Contact Us</strong></a>
+        &nbsp;&nbsp;
+        <a href="#" target="_blank" rel="noopener noreferrer"><strong>Join Our Mission</strong></a>
+        &nbsp;&nbsp;
+        <a href="#" target="_blank" rel="noopener noreferrer"><strong>Contact Us</strong></a>
+      </p>
+    </div>
+    
+    <!-- <div class="made-with-love has-text-centered pt-3">
+      Made with ❤️ by <strong>DD Twins </strong>
+    </div> -->
+  
+  </div>
+</footer>
+
+
+<!-- JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Class 12 - Academic</title>
+  <link rel="icon" href="/title_lo.png" alt="hamroopportunity logo">
+  <meta name="description" content="Hamro Opportunity is a comprehensive platform providing students in Nepal with the best academic, extracurricular, and scholarship resources.">
+  <meta name="keywords" content="academic resources Nepal, study materials Nepal, past exam papers Nepal, online courses Nepal, reference materials Nepal, sports activities Nepal, arts and culture Nepal, volunteering opportunities Nepal, clubs in Nepal, scholarship opportunities Nepal, educational resources Nepal, student support Nepal, academic excellence Nepal, Hamro Opportunity, Nepal">
+  <meta name="author" content="Hamro Opportunity">
+  <link rel="preload" href="/style.css" as="style" />
+  <link rel="preload" href="/script.js" as="script" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+</head>
+<body>
+<!-- Nav bar -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand custom-navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <img src="/lo.png" width="112" height="28" alt="hamroopportunity">
+    </a>
+    <!-- <div id="nav-bar-search-icon" class="navbar-item is-hidden-desktop">
+      <button class="button is-white" onclick="toggleSearchOverlay()">
+        <span class="icon is-small has-text-info">
+          <i class="fas fa-search"></i>
+        </span>
+      </button>
+    </div> -->
+    <button class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu"
+      onclick="toggleNavbarMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div id="navbar" class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" onclick="toggleDropdown('class12')">
+          Class 12
+        </a>
+        <div class="navbar-dropdown" id="class12Dropdown">
+          <a class="navbar-item dropdown-toggle" href="/class-12-academic.html">Academic</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-12-extracurricular.html">Extra-Curricular</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-12-scholarship.html">Scholarship</a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" onclick="toggleDropdown('class11')">
+          Class 11
+        </a>
+        <div class="navbar-dropdown" id="class11Dropdown">
+          <a class="navbar-item dropdown-toggle" href="/class-11-academic.html">Academic</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-11-extracurricular.html">Extra-Curricular</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-11-scholarship.html">Scholarship</a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" onclick="toggleDropdown('class10')">
+          Class 10
+        </a>
+        <div class="navbar-dropdown" id="class10Dropdown">
+          <a class="navbar-item dropdown-toggle" href="/class-10-academic.html">Academic</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-10-extracurricular.html">Extra-Curricular</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-10-scholarship.html">Scholarship</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <input class="input" type="text" placeholder="Search" style="border-color: hsl(153, 53%, 53%); color:black;">
+          </p>
+          <p class="control">
+            <button class="button is-success">
+              Search
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Columns -->
+<div class="tile is-ancestor">
+  
+    <div class="tile is-parent">
+    <article class="tile is-child notification custom-notification">
+      <p class="card-header-title is-centered">
+        <a href="/class-12-scholarship.html" class="tile-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fas fa-angle-left is-left" aria-hidden="true"></i>
+          </span>
+        </a>
+        
+        Class-12 | Academic
+      
+        <a href="/class-12-extracurricular.html" class="tile-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fas fa-angle-right is-right" aria-hidden="true"></i>
+          </span>
+        </a>
+      </p>
+      
+
+      <div class="content">
+        <!-- Content -->
+        <div class="card-section mt-5">
+          <div class="scrollable-headers">
+            <header class="card-header" onclick="selectContent('english', this)">
+              <p class="card-header-title">
+                English
+              </p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-right" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header>
+            <header class="card-header" onclick="selectContent('nepali', this)">
+              <p class="card-header-title">
+                Nepali
+              </p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-right" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header>
+            <header class="card-header" onclick="selectContent('maths', this)">
+                <p class="card-header-title">
+                  Maths
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('computer_science', this)">
+                <p class="card-header-title">
+                  Computer Science
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('physics', this)">
+                <p class="card-header-title">
+                  Physics
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('chemistry', this)">
+                <p class="card-header-title">
+                  Chemistry
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('biology', this)">
+                <p class="card-header-title">
+                  Biology
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('business', this)">
+                <p class="card-header-title">
+                  Business
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+            <!-- Add more header options as needed -->
+          </div>
+        </div>
+      </div>
+    </article>
+    </div>
+
+    <div class="tile is-vertical is-8">
+      <div class="tile">
+        <div class="tile is-parent">
+          <article class="tile is-child notification" id="contentDisplay">
+            <!-- English content starts here. -->
+            <div class="content-block" id="englishContent" style="display: none;">
+              <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class-12 Academic</a>
+                  </li>
+                  <li>
+                    <a href="#">English</a>
+                  </li>
+                  <div class="pdf-buttons">
+                    <div class="columns">
+                      <div class="column">
+                        <a href="https://drive.google.com/file/d/1-3_lXGE7GHkNY3FISTHUCh8tfwUqec0Z/view?usp=sharing" class="button  is-rounded is-small is-success" target="_blank">Book Pdf</a>
+                      </div>
+                      <div class="column">
+                        <a href="#" class="button is-rounded is-small is-success" target="_blank">Syllabus Pdf</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </ul>
+               </nav>
+            <div class="container">
+              <div class="columns">
+                <div class="column">
+                  <img src="English1.png" width="100%" alt="english">
+                </div>
+              </div>
+              <div class="pdff-buttons is-hidden-desktop pb-4 has-text-left">
+                <a href="https://drive.google.com/file/d/1-3_lXGE7GHkNY3FISTHUCh8tfwUqec0Z/view?usp=sharing" target="_blank" class="button  is-rounded is-small is-success" >Book Pdf</a>
+                <a href="#" target="_blank" class="button is-rounded is-small is-success" >Syllabus Pdf</a>
+              </div>
+            
+              <strong class="title">Introduction</strong><br><br>
+              <p>English curriculum of class 12 consists of three sections which include Literature, Grammar, and Creative Writing. As we are aiming for the best score in this subject, we need to excel in each of these sections. Therefore, we have compiled a list of the best scattered resources online on one platform.</p><br>
+            </div>
+            <div class="container">
+              <strong class="title">
+                Resources
+              </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    <i class="fas fa-pen-nib" style="margin-right: 0.5rem;"></i> Creative Writing
+                  </strong><br><br>
+                
+                  <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your creative writing skills and ultimately achieve the best score.</p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <thead>
+                        <tr>
+                          <th>
+                            <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                          </th>
+                          <th>
+                            <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                          </th>
+                          <th>
+                            <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a id="diwasLink">Diwas</a></td>
+                          <td><a id="dipeshLink">Dipesh</a></td>
+                          <td><a id="heroLink">Hero</a></td>
+
+                          <!-- this is code for modal -->
+                          <div class="modal" id="myModal">
+                            <div class="modal-background"></div>
+                            <div class="modal-card">
+                              <header class="modal-card-head">
+                                <p class="modal-card-title">Modal title</p>
+                                <button class="delete" aria-label="close"></button>
+                              </header>
+                              <section class="modal-card-body">
+                                <!-- Content ... -->
+                              </section>
+                            </div>
+                          </div>
+
+                          
+
+                        </tr>
+                        <tr>
+                          <td>hello</td>
+                          <td>hello</td>
+                          <td>hello</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    <i class="fas fa-book-reader" style="margin-right: 0.5rem;"></i> Grammar
+                  </strong><br><br>
+                  <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your Grammar skills and ultimately achieve the best score.</p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <thead>
+                        <tr>
+                          <th>
+                            <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                          </th>
+                          <th>
+                            <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                          </th>
+                          <th>
+                            <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Hello</td>
+                          <td>Hello</td>
+                          <td>hello</td>
+                        </tr>
+                        <tr>
+                          <td>hello</td>
+                          <td>hello</td>
+                          <td>hello</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container"> 
+                  <strong class="h1">
+                    <i class="fas fa-feather-alt" style="margin-right: 0.5rem;"></i> Literature
+                  </strong><br><br>
+                  <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your Literature skills and ultimately achieve the best score.</p><br><br>
+                
+                  <div >
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <thead>
+                        <tr>
+                          <th>
+                            <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                          </th>
+                          <th>
+                            <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                          </th>
+                          <th>
+                            <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Hello</td>
+                          <td>Hello</td>
+                          <td>hello</td>
+                        </tr>
+                        <tr>
+                          <td>hello</td>
+                          <td>hello</td>
+                          <td>hello</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div><br><br>
+            </div>
+            <div class="container">
+              <strong class="title">Bonus Tips</strong><br><br>
+              <p>Here is the tips from a student who have scored A+ in English +2 Examination</p><br><br>
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/OSSmaCNJP4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+            
+          </div>
+          <!-- English content ends here. -->
+
+          <!-- Nepali content starts here -->
+          <div class="content-block" id="nepaliContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 / Academics</a>
+                  </li>
+                  <li>
+                    <a href="#">Nepali</a>
+                  </li>
+                  <div class="pdf-buttons">
+                    <div class="columns">
+                      <div class="column">
+                        <a href="https://drive.google.com/file/d/1-3SvN25U4IQ-FVA8QAvH_1E3iQ-PV9MX/view?usp=sharing" class="button  is-rounded is-small is-success" target="_blank">Book Pdf</a>
+                      </div>
+                      <div class="column">
+                        <a href="#" class="button is-rounded is-small is-success" target="_blank">Syllabus Pdf</a>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </nav>
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="NEPALI.png" width="100%" alt="english">
+                  </div>
+                </div>
+                <div class="pdff-buttons is-hidden-desktop pb-4 has-text-left">
+                  <a href="https://drive.google.com/file/d/1-3SvN25U4IQ-FVA8QAvH_1E3iQ-PV9MX/view?usp=sharing" class="button is-rounded is-small is-success" target="_blank">Book Pdf</a>
+                  <a href="https://drive.google.com/file/d/1-3SvN25U4IQ-FVA8QAvH_1E3iQ-PV9MX/view?usp=sharing" class="button is-rounded is-small is-success" target="_blank">Syllabus Pdf</a>
+              </div>
+              
+              
+                <strong class="title">Introduction</strong><br><br>
+                <p>English curriculum of class 12 consists of three sections which include Literature, Grammar, and Creative Writing. As we are aiming for the best score in this subject, we need to excel in each of these sections. Therefore, we have compiled a list of the best scattered resources online on one platform.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Resources
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      <i class="fas fa-pen-nib" style="margin-right: 0.5rem;"></i> Creative Writing
+                    </strong><br><br>
+                  
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your creative writing skills and ultimately achieve the best score.</p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a id="diwasLink">Diwas</a></td>
+                            <td><a id="dipeshLink">Dipesh</a></td>
+                            <td><a id="heroLink">Hero</a></td>
+  
+                            <!-- this is code for modal -->
+                            <div class="modal" id="myModal">
+                              <div class="modal-background"></div>
+                              <div class="modal-card">
+                                <header class="modal-card-head">
+                                  <p class="modal-card-title">Modal title</p>
+                                  <button class="delete" aria-label="close"></button>
+                                </header>
+                                <section class="modal-card-body">
+                                  <!-- Content ... -->
+                                </section>
+                              </div>
+                            </div>
+  
+                            
+  
+                          </tr>
+                          <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      <i class="fas fa-book-reader" style="margin-right: 0.5rem;"></i> Grammar
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your Grammar skills and ultimately achieve the best score.</p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                          <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container"> 
+                    <strong class="h1">
+                      <i class="fas fa-feather-alt" style="margin-right: 0.5rem;"></i> Literature
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your Literature skills and ultimately achieve the best score.</p><br><br>
+                  
+                    <div >
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                          <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">Bonus Tips</strong><br><br>
+                <p>Here is the tips from a student who have scored A+ in English +2 Examination</p><br><br>
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/OSSmaCNJP4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+          </div>
+          <!-- Nepali content ends here -->
+          <!-- Math content starts here -->
+          <div class="content-block" id="mathsContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 / Academics</a>
+                  </li>
+                  <li>
+                    <a href="#">Maths</a>
+                  </li>
+                  <div class="pdf-buttons">
+                    <div class="columns">
+                      <div class="column">
+                        <a href="https://docs.google.com/uc?authuser=0&id=154NBibUdKLqLGDx_MFVhfiNCwBDFrWvV&export=download#Basic%20Mathematics%20(Class%2012)%20Sukunda%20Publication.pdf" target="_blank" class="button  is-rounded is-small is-success" >Book Pdf</a>
+                      </div>
+                      <div class="column">
+                        <a href="#" target="_blank" class="button is-rounded is-small is-success">Syllabus Pdf</a>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </nav>
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="MATHS.png" width="100%" alt="english">
+                  </div>
+                </div>
+                <div class="pdff-buttons is-hidden-desktop pb-4 has-text-left">
+                  <a href="https://docs.google.com/uc?authuser=0&id=154NBibUdKLqLGDx_MFVhfiNCwBDFrWvV&export=download#Basic%20Mathematics%20(Class%2012)%20Sukunda%20Publication.pdf" target="_blank" class="button  is-rounded is-small is-success" >Book Pdf</a>
+                  <a href="#" target="_blank" class="button is-rounded is-small is-success" >Syllabus Pdf</a>
+                </div>
+              
+                <strong class="title">Introduction</strong><br><br>
+                <p>English curriculum of class 12 consists of three sections which include Literature, Grammar, and Creative Writing. As we are aiming for the best score in this subject, we need to excel in each of these sections. Therefore, we have compiled a list of the best scattered resources online on one platform.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Resources
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      <i class="fas fa-pen-nib" style="margin-right: 0.5rem;"></i> Creative Writing
+                    </strong><br><br>
+                  
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your creative writing skills and ultimately achieve the best score.</p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a id="diwasLink">Diwas</a></td>
+                            <td><a id="dipeshLink">Dipesh</a></td>
+                            <td><a id="heroLink">Hero</a></td>
+  
+                            <!-- this is code for modal -->
+                            <div class="modal" id="myModal">
+                              <div class="modal-background"></div>
+                              <div class="modal-card">
+                                <header class="modal-card-head">
+                                  <p class="modal-card-title">Modal title</p>
+                                  <button class="delete" aria-label="close"></button>
+                                </header>
+                                <section class="modal-card-body">
+                                  <!-- Content ... -->
+                                </section>
+                              </div>
+                            </div>
+  
+                            
+  
+                          </tr>
+                          <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      <i class="fas fa-book-reader" style="margin-right: 0.5rem;"></i> Grammar
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your Grammar skills and ultimately achieve the best score.</p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                          <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container"> 
+                    <strong class="h1">
+                      <i class="fas fa-feather-alt" style="margin-right: 0.5rem;"></i> Literature
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your Literature skills and ultimately achieve the best score.</p><br><br>
+                  
+                    <div >
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">Bonus Tips</strong><br><br>
+                <p>Here is the tips from a student who have scored A+ in English +2 Examination</p><br><br>
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/OSSmaCNJP4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+          </div>
+            <!-- Math content ends here -->
+            <!-- Computer content starts here -->
+          <div class="content-block" id="computer_scienceContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 / Academics</a>
+                  </li>
+                  <li>
+                    <a href="#">Computer </a>
+                  </li>
+                  <div class="pdf-buttons">
+                    <div class="columns">
+                      <div class="column">
+                        <a href="#" class="button  is-rounded is-small is-success" >Book Pdf</a>
+                      </div>
+                      <div class="column">
+                        <a href="#" class="button is-rounded is-small is-success">Syllabus Pdf</a>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </nav>
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="COMPUTER.png" width="100%" alt="english">
+                  </div>
+                </div>
+                <div class="pdff-buttons is-hidden-desktop pb-4 has-text-left">
+                  <a href="#" class="button  is-rounded is-small is-success" >Book Pdf</a>
+                  <a href="#" class="button is-rounded is-small is-success" >Syllabus Pdf</a>
+                </div>
+              
+                <strong class="title">Introduction</strong><br><br>
+                <p>Computer curriculum of class 12 consists of seven sections which include:<br class="small-text"><br>1. DBMS Concept<br>2. Concept of Network and data communication<br>3. Web technology - II (CSS, Javascript, PHP)<br>4. C-Programming<br>5. OOP concept<br>6. Software process model<br>7. Recent trends in ICT<br><br> </p>As we are aiming for the best score in this subject, we need to excel in each of these sections. Therefore, we have compiled a list of the best scattered resources online on one platform.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Resources
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      <i class="fas fa-pen-nib" style="margin-right: 0.5rem;"></i> DBMS Concept
+                    </strong><br><br>
+                  
+                    <p>Here you will find different YouTube channels, apps, and websites that provide the best materials to enhance your DBMS concept skills and ultimately achieve the best score.</p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-mobile-alt" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a href="https://www.youtube.com/watch?v=1rP9JympxMI&ab_channel=EdusoftAcademy">Edusoft Academy</a></td>
+                            <td><a  href="https://readersnepal.com/e-notes/neb-new-course-class-12/computer-science-3">Reader Nepal</a></td>
+                            <td><a href="https://play.google.com/store/apps/details?id=com.neb12.com">NEB Computer 12</a></td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      <i class="fas fa-book-reader" style="margin-right: 0.5rem;"></i> Concept of Network and data communication
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, apps, and websites that provide the best materials to enhance your skills and ultimately achieve the best score.</p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-mobile-alt" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  
+                  <div class="container"> 
+                    <strong class="h1">
+                      <i class="fas fa-feather-alt" style="margin-right: 0.5rem;"></i> Web technology - II (CSS, Javascript, PHP)
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, apps, and websites that provide the best materials to enhance your skills and ultimately achieve the best score.</p><br><br>
+                  
+                    <div >
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-mobile-alt" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  
+                  <div class="container"> 
+                    <strong class="h1">
+                      <i class="fas fa-feather-alt" style="margin-right: 0.5rem;"></i> C - Programming
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, apps, and websites that provide the best materials to enhance your skills and ultimately achieve the best score.</p><br><br>
+                  
+                    <div >
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-mobile-alt" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container"> 
+                    <strong class="h1">
+                      <i class="fas fa-feather-alt" style="margin-right: 0.5rem;"></i> OOP concept
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, apps, and websites that provide the best materials to enhance your skills and ultimately achieve the best score.</p><br><br>
+                  
+                    <div >
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-mobile-alt" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container"> 
+                    <strong class="h1">
+                      <i class="fas fa-feather-alt" style="margin-right: 0.5rem;"></i> Software process model
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your skills and ultimately achieve the best score.</p><br><br>
+                  
+                    <div >
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                          <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container"> 
+                    <strong class="h1">
+                      <i class="fas fa-feather-alt" style="margin-right: 0.5rem;"></i> Recent trends in ICT
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, apps, and websites that provide the best materials to enhance your skills and ultimately achieve the best score.</p><br><br>
+                  
+                    <div >
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-mobile-alt" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">Bonus Tips</strong><br><br>
+                <p>Here is the tips from a student who have scored A+ in Computer +2 Examination</p><br><br>
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/OSSmaCNJP4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+          </div>
+          <!-- Computer content ends here -->
+          <!-- Physics content starts here -->
+          <div class="content-block" id="physicsContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 / Academics</a>
+                  </li>
+                  <li>
+                    <a href="#">Physics</a>
+                  </li>
+                  <div class="pdf-buttons">
+                    <div class="columns">
+                      <div class="column">
+                        <a href="#" class="button  is-rounded is-small is-success" >Book Pdf</a>
+                      </div>
+                      <div class="column">
+                        <a href="#" class="button is-rounded is-small is-success">Syllabus Pdf</a>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </nav>
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="PHYSICS.png" width="100%" alt="english">
+                  </div>
+                </div>
+                <div class="pdff-buttons is-hidden-desktop pb-4 has-text-left">
+                  <a href="#" class="button  is-rounded is-small is-success" >Book Pdf</a>
+                  <a href="#" class="button is-rounded is-small is-success" >Syllabus Pdf</a>
+                </div>
+              
+                <strong class="title">Introduction</strong><br><br>
+                <p>English curriculum of class 12 consists of three sections which include Literature, Grammar, and Creative Writing. As we are aiming for the best score in this subject, we need to excel in each of these sections. Therefore, we have compiled a list of the best scattered resources online on one platform.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Resources
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      <i class="fas fa-pen-nib" style="margin-right: 0.5rem;"></i> Creative Writing
+                    </strong><br><br>
+                  
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your creative writing skills and ultimately achieve the best score.</p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a id="diwasLink">Diwas</a></td>
+                            <td><a id="dipeshLink">Dipesh</a></td>
+                            <td><a id="heroLink">Hero</a></td>
+  
+                            <!-- this is code for modal -->
+                            <div class="modal" id="myModal">
+                              <div class="modal-background"></div>
+                              <div class="modal-card">
+                                <header class="modal-card-head">
+                                  <p class="modal-card-title">Modal title</p>
+                                  <button class="delete" aria-label="close"></button>
+                                </header>
+                                <section class="modal-card-body">
+                                  <!-- Content ... -->
+                                </section>
+                              </div>
+                            </div>
+  
+                            
+  
+                          </tr>
+                          <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      <i class="fas fa-book-reader" style="margin-right: 0.5rem;"></i> Grammar
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your Grammar skills and ultimately achieve the best score.</p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                          <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container"> 
+                    <strong class="h1">
+                      <i class="fas fa-feather-alt" style="margin-right: 0.5rem;"></i> Literature
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your Literature skills and ultimately achieve the best score.</p><br><br>
+                  
+                    <div >
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                          <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">Bonus Tips</strong><br><br>
+                <p>Here is the tips from a student who have scored A+ in English +2 Examination</p><br><br>
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/OSSmaCNJP4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+          </div>
+          <!-- Physics content ends here -->
+          <!-- Chemistry content starts here -->
+          <div class="content-block" id="chemistryContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 / Academics</a>
+                  </li>
+                  <li>
+                    <a href="#">Chemistry</a>
+                  </li>
+                  <div class="pdf-buttons">
+                    <div class="columns">
+                      <div class="column">
+                        <a href="#" class="button  is-rounded is-small is-success" >Book Pdf</a>
+                      </div>
+                      <div class="column">
+                        <a href="#" class="button is-rounded is-small is-success">Syllabus Pdf</a>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </nav>
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="CHEMISTRY.png" width="100%" alt="english">
+                  </div>
+                </div>
+                <div class="pdff-buttons is-hidden-desktop pb-4 has-text-left">
+                  <a href="#" class="button  is-rounded is-small is-success" >Book Pdf</a>
+                  <a href="#" class="button is-rounded is-small is-success" >Syllabus Pdf</a>
+                </div>
+              
+                <strong class="title">Introduction</strong><br><br>
+                <p>English curriculum of class 12 consists of three sections which include Literature, Grammar, and Creative Writing. As we are aiming for the best score in this subject, we need to excel in each of these sections. Therefore, we have compiled a list of the best scattered resources online on one platform.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Resources
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      <i class="fas fa-pen-nib" style="margin-right: 0.5rem;"></i> Creative Writing
+                    </strong><br><br>
+                  
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your creative writing skills and ultimately achieve the best score.</p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a id="diwasLink">Diwas</a></td>
+                            <td><a id="dipeshLink">Dipesh</a></td>
+                            <td><a id="heroLink">Hero</a></td>
+  
+                            <!-- this is code for modal -->
+                            <div class="modal" id="myModal">
+                              <div class="modal-background"></div>
+                              <div class="modal-card">
+                                <header class="modal-card-head">
+                                  <p class="modal-card-title">Modal title</p>
+                                  <button class="delete" aria-label="close"></button>
+                                </header>
+                                <section class="modal-card-body">
+                                  <!-- Content ... -->
+                                </section>
+                              </div>
+                            </div>
+  
+                            
+  
+                          </tr>
+                          <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      <i class="fas fa-book-reader" style="margin-right: 0.5rem;"></i> Grammar
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your Grammar skills and ultimately achieve the best score.</p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                          <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container"> 
+                    <strong class="h1">
+                      <i class="fas fa-feather-alt" style="margin-right: 0.5rem;"></i> Literature
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your Literature skills and ultimately achieve the best score.</p><br><br>
+                  
+                    <div >
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                          <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">Bonus Tips</strong><br><br>
+                <p>Here is the tips from a student who have scored A+ in English +2 Examination</p><br><br>
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/OSSmaCNJP4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+          </div>
+          <!-- Chemistry content ends here -->
+          <!-- Biology content starts here -->
+          <div class="content-block" id="biologyContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 / Academics</a>
+                  </li>
+                  <li>
+                    <a href="#">Biology</a>
+                  </li>
+                  <div class="pdf-buttons">
+                    <div class="columns">
+                      <div class="column">
+                        <a href="#" class="button  is-rounded is-small is-success" >Book Pdf</a>
+                      </div>
+                      <div class="column">
+                        <a href="#" class="button is-rounded is-small is-success">Syllabus Pdf</a>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </nav>
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="BIOLOGY.png" width="100%" alt="english">
+                  </div>
+                </div>
+                <div class="pdff-buttons is-hidden-desktop pb-4 has-text-left">
+                  <a href="#" class="button  is-rounded is-small is-success" >Book Pdf</a>
+                  <a href="#" class="button is-rounded is-small is-success" >Syllabus Pdf</a>
+                </div>
+              
+                <strong class="title">Introduction</strong><br><br>
+                <p>English curriculum of class 12 consists of three sections which include Literature, Grammar, and Creative Writing. As we are aiming for the best score in this subject, we need to excel in each of these sections. Therefore, we have compiled a list of the best scattered resources online on one platform.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Resources
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      <i class="fas fa-pen-nib" style="margin-right: 0.5rem;"></i> Creative Writing
+                    </strong><br><br>
+                  
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your creative writing skills and ultimately achieve the best score.</p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a id="diwasLink">Diwas</a></td>
+                            <td><a id="dipeshLink">Dipesh</a></td>
+                            <td><a id="heroLink">Hero</a></td>
+  
+                            <!-- this is code for modal -->
+                            <div class="modal" id="myModal">
+                              <div class="modal-background"></div>
+                              <div class="modal-card">
+                                <header class="modal-card-head">
+                                  <p class="modal-card-title">Modal title</p>
+                                  <button class="delete" aria-label="close"></button>
+                                </header>
+                                <section class="modal-card-body">
+                                  <!-- Content ... -->
+                                </section>
+                              </div>
+                            </div>
+  
+                            
+  
+                          </tr>
+                          <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      <i class="fas fa-book-reader" style="margin-right: 0.5rem;"></i> Grammar
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your Grammar skills and ultimately achieve the best score.</p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                          <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container"> 
+                    <strong class="h1">
+                      <i class="fas fa-feather-alt" style="margin-right: 0.5rem;"></i> Literature
+                    </strong><br><br>
+                    <p>Here you will find different YouTube channels, books, and websites that provide the best materials to enhance your Literature skills and ultimately achieve the best score.</p><br><br>
+                  
+                    <div >
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <thead>
+                          <tr>
+                            <th>
+                              <i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i> Youtube
+                            </th>
+                            <th>
+                              <i class="fas fa-globe" style="margin-right: 0.5rem; color: blue;"></i> Website
+                            </th>
+                            <th>
+                              <i class="fas fa-book" style="margin-right: 0.5rem; color: #ff8800;"></i> Book
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>hello</td>
+                          </tr>
+                          <tr>
+                            <td>hello</td>
+                            <td>hello</td>
+                            <td>hello</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">Bonus Tips</strong><br><br>
+                <p>Here is the tips from a student who have scored A+ in English +2 Examination</p><br><br>
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/OSSmaCNJP4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+          </div>
+          <!-- Biology content ends here -->
+          <div class="content-block" id="businessContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 / Academics</a>
+                  </li>
+                  <li>
+                    <a href="#">Business</a>
+                  </li>
+                </ul>
+              </nav>
+              Business content goes here.
+          </div>
+          <!-- Add more content blocks for other options -->
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+
+
+<footer class="footer" style="height: 50px;">
+  <div class="content has-text-centered">
+    
+    <div class="social-icons">
+      <a href="https://www.facebook.com/hamroopportunity" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/hamroopportunity" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.twitter.com/hamroopportunity" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitter"></i>
+      </a>
+      
+    </div>
+    <div class="pt-4">
+      <p>
+        <a href="/about.html"  rel="noopener noreferrer"><strong>About</strong></a>
+        &nbsp;&nbsp;
+        <a href="#"  rel="noopener noreferrer" ><strong>Join Our Mission</strong></a>
+        &nbsp;&nbsp;
+        <a href="/contact.html"  rel="noopener noreferrer" ><strong>Contact</strong></a>
+      </p>
+    </div>
+    
+    <!-- <div class="made-with-love has-text-centered pt-3">
+      Made with ❤️ by <strong>DD Twins </strong>
+    </div> -->
+  
+  </div>
+</footer>
+
+<button id="scrollButton" class="scroll-button" onclick="scrollToTop()">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<style>
+
+
+    /* Custom CSS for making text smaller */
+    .small-text {
+      font-size: 12px; /* You can adjust the value as needed */
+    }
+ 
+.custom-notification {
+  border-radius: 20px;
+}
+
+.scrollable-headers {
+  max-height: 420px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+
+
+.card-header.active {
+  background-color: #7ba4e7;
+}
+
+.card-header.active .card-header-title {
+  font-weight: bold;
+}
+
+
+</style>
+
+<!-- JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+$(document).ready(function() {
+      // Trigger English header and content on page load
+      selectContent('english', '#englishLink');
+    });
+   
+
+    function selectContent(option, element) {
+      // Hide all content blocks
+      $(".content-block").hide();
+
+      // Show the selected content block
+      $("#" + option + "Content").show();
+
+      // Remove the active class from all headers
+      $(".card-header").removeClass("active");
+
+      // Add the active class to the selected header
+      $(element).addClass("active");  
+    }
+
+</script>
+<!-- javascript for modals -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+  // $(document).ready(function() {
+  //   // Handle click event on "Diwas" link
+  //   $("#diwasLink").click(function() {
+  //     showModal("Diwas", "This channel contain one playlist named '##' for creative Writing. Here you will find the content covering Essay, News Story, News Article and so on.<br><br> <a href='#' target='_blank'><button class='button is-info is-rounded'>Youtube Playlist</button></a>");
+  //   });
+
+  //   // Handle click event on "Dipesh" link
+  //   $("#dipeshLink").click(function() {
+  //     showModal("Modal title", "Content for Dipesh");
+  //   });
+
+  //   // Handle click event on "Hero" link
+  //   $("#heroLink").click(function() {
+  //     showModal("Modal title", "Content for Hero");
+  //   });
+
+
+
+    
+
+  //   // Close modal when the close button is clicked
+  //   $(".modal .delete, .modal .button").click(function() {
+  //     $(".modal").removeClass("is-active");
+  //   });
+  // });
+
+  // Function to show the modal
+  function showModal(title, content) {
+    $(".modal-card-title").text(title);
+    $(".modal-card-body").html(content);
+    $(".modal").addClass("is-active");
+  }
+</script>
+<script src="/script.js"></script>
+</body>
+</html>

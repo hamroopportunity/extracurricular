@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>About</title>
+  <link rel="preload" href="/style.css" as="style" />
+  <link rel="preload" href="/script.js" as="script" />
+  <meta name="description" content="Hamro Opportunity is a comprehensive platform providing students in Nepal with the best academic, extracurricular, and scholarship resources.">
+  <meta name="keywords" content="academic resources Nepal, study materials Nepal, past exam papers Nepal, online courses Nepal, reference materials Nepal, sports activities Nepal, arts and culture Nepal, volunteering opportunities Nepal, clubs in Nepal, scholarship opportunities Nepal, educational resources Nepal, student support Nepal, academic excellence Nepal, Hamro Opportunity, Nepal">
+  <meta name="author" content="Hamro Opportunity">
+  <link rel="icon" href="/title_lo.png" alt="hamroopportunity logo">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+<!-- Nav bar -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand custom-navbar-brand">
+    <a class="navbar-item" href="/index.html">
+      <img src="/lo.png" width="112" height="28" alt="hamroopportunity home">
+    </a>
+    <!-- <div id="nav-bar-search-icon" class="navbar-item is-hidden-desktop">
+      <button class="button is-white" onclick="toggleSearchOverlay()">
+        <span class="icon is-small has-text-info">
+          <i class="fas fa-search"></i>
+        </span>
+      </button>
+    </div> -->
+    <button class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu"
+      onclick="toggleNavbarMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div id="navbar" class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" onclick="toggleDropdown('class12')">
+          Class 12
+        </a>
+        <div class="navbar-dropdown" id="class12Dropdown">
+          <a class="navbar-item dropdown-toggle" href="/class-12-academic.html">Academic</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-12-extracurricular.html">Extra-Curricular</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-12-scholarship.html">Scholarship</a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" onclick="toggleDropdown('class11')">
+          Class 11
+        </a>
+        <div class="navbar-dropdown" id="class11Dropdown">
+          <a class="navbar-item dropdown-toggle" href="/class-11-academic.html">Academic</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-11-extracurricular.html">Extra-Curricular</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-11-scholarship.html">Scholarship</a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" onclick="toggleDropdown('class10')">
+          Class 10
+        </a>
+        <div class="navbar-dropdown" id="class10Dropdown">
+          <a class="navbar-item dropdown-toggle" href="/class-10-academic.html">Academic</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-10-extracurricular.html">Extra-Curricular</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-10-scholarship.html">Scholarship</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <input class="input" type="text" placeholder="Search">
+          </p>
+          <p class="control">
+            <button class="button is-success">
+              Search
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Content -->
+
+<section class="section about" id="about">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-two-thirds">
+        <div class="content">
+          <div style="display: flex;">
+              <div class="container has-text-left pt-6">
+               <h2 class="subtitle">About us</h2>
+                <p>Hamro Opportunity empowers you to unlock your full potential.</p><br>
+              </div>
+              <div class="container has-text-right">
+                <img src="/about1.png" width="300px" height="450px" alt="about image">
+              </div>
+            </div>
+            
+          <div class="columns is-multiline">
+            <div class="column is-half">
+              <div class="box">
+                <div class="columns is-vcentered">
+                  <div class="column is-narrow">
+                    <i class="fas fa-rocket"></i>
+                  </div>
+                  <div class="column">
+                    <p class="is-size-6 has-text-weight-semibold">Mission</p>
+                    <p class="is-size-7">Click to view</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-half">
+              <div class="box">
+                <div class="columns is-vcentered">
+                  <div class="column is-narrow">
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+                  <div class="column">
+                    <p class="is-size-6 has-text-weight-semibold">What We Offer</p>
+                    <p class="is-size-7">Click to view</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-half">
+              <div class="box">
+                <div class="columns is-vcentered">
+                  <div class="column is-narrow">
+                    <i class="fas fa-user-tie"></i>
+                  </div>
+                  <div class="column">
+                    <p class="is-size-6 has-text-weight-semibold">Founder</p>
+                    <p class="is-size-7">Click to view</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-half">
+              <div class="box">
+                <div class="columns is-vcentered">
+                  <div class="column is-narrow">
+                    <i class="fas fa-flag"></i>
+                  </div>
+                  <div class="column">
+                    <p class="is-size-6 has-text-weight-semibold">Join Our Mission</p>
+                    <p class="is-size-7">Click to view</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<hr class="navbar-divider">
+<footer class="footer" style="height: 50px;">
+  <div class="content has-text-centered">
+    
+    <div class="social-icons">
+      <a href="https://www.facebook.com/hamroopportunity" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/hamroopportunity" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.twitter.com/hamroopportunity" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitter"></i>
+      </a>
+      
+    </div>
+    <div class="pt-4">
+      <p>
+        <a href="/about.html"  rel="noopener noreferrer"><strong>About</strong></a>
+        &nbsp;&nbsp;
+        <a href="#"  rel="noopener noreferrer"><strong>Join Our Mission</strong></a>
+        &nbsp;&nbsp;
+        <a href="/contact.html"  rel="noopener noreferrer"><strong>Contact</strong></a>
+      </p>
+    </div>
+    
+    <!-- <div class="made-with-love has-text-centered pt-3">
+      Made with ❤️ by <strong>DD Twins </strong>
+    </div> -->
+  
+  </div>
+</footer>
+
+<button id="scrollButton" class="scroll-button" onclick="scrollToTop()">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+
+<!-- JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Hamro Opportunity</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+<!-- Nav bar -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand custom-navbar-brand">
+    <a class="navbar-item" href="/index.html">
+      <img src="/lo.png" width="112" height="28">
+    </a>
+    <!-- <div id="nav-bar-search-icon" class="navbar-item is-hidden-desktop">
+      <button class="button is-white" onclick="toggleSearchOverlay()">
+        <span class="icon is-small has-text-info">
+          <i class="fas fa-search"></i>
+        </span>
+      </button>
+    </div> -->
+    <button class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu"
+      onclick="toggleNavbarMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div id="navbar" class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" onclick="toggleDropdown('class12')">
+          Class 12
+        </a>
+        <div class="navbar-dropdown" id="class12Dropdown">
+          <a class="navbar-item dropdown-toggle" href="/class-12-academic.html">Academic</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-12-extracurricular.html">Extra-Curricular</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-12-scholarship.html">Scholarship</a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" onclick="toggleDropdown('class11')">
+          Class 11
+        </a>
+        <div class="navbar-dropdown" id="class11Dropdown">
+          <a class="navbar-item dropdown-toggle" href="/class-11-academic.html">Academic</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-11-extracurricular.html">Extra-Curricular</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-11-scholarship.html">Scholarship</a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" onclick="toggleDropdown('class10')">
+          Class 10
+        </a>
+        <div class="navbar-dropdown" id="class10Dropdown">
+          <a class="navbar-item dropdown-toggle" href="/class-10-academic.html">Academic</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-10-extracurricular.html">Extra-Curricular</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-10-scholarship.html">Scholarship</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <input class="input" type="text" placeholder="Search" style="border-color:hsl(153, 53%,  53%);">
+          </p>
+          <p class="control">
+            <button class="button is-success">
+              Search
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero intro section -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column ">
+          <h1 class="custom-roboto title is-size-1-tablet has-text-left">
+            ALL RESOURCES
+          </h1>
+          <h2 class="custom-helvetica title">
+            ONLINE !!
+          </h2>
+          <h2 class="custom-clear subtitle">
+            Bringing Scattered Information Together on a Single Platform
+          </h2>                             
+        </div>
+        <div class="column">
+          <div class="image-container">
+            <img src="home.png" alt="home Image" class="mobile-image desktop-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Main content -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline">
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-content">
+            <p class="title">
+              Academic 
+              <i class="fas fa-graduation-cap" style="color: hsl(153, 53%,  53%);"></i>
+            </p>
+            <p class="subtitle">
+              Explore resources by class
+              
+            </p>
+            <div class="content">
+              <div class="dropdown is-right is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button is-success" aria-haspopup="true" aria-controls="dropdown-menu" onclick="toggleDropdown(this)">
+                    <span>Select Class</span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu" style="display: none;">
+                  <div class="dropdown-content">
+                    <a href="/class-12-academic.html" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 12
+                    </a>
+                    <a href="/class-11-academic.html" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 11
+                    </a>
+                    <a href="/class-10-academic.html" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 10
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-content">
+            <p class="title">
+              Extra-Curricular
+              <i class="fas fa-bullseye" style="color: hsl(153, 53%,  53%);"></i>
+            </p>
+            <p class="subtitle">
+              Explore resources by class
+            </p>
+            <div class="content">
+              <div class="dropdown is-right is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button is-success" aria-haspopup="true" aria-controls="dropdown-menu" onclick="toggleDropdown(this)">
+                    <span>Select Class</span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu" style="display: none;">
+                  <div class="dropdown-content">
+                    <a href="/class-12-extracurricular.html" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 12
+                    </a>
+                    <a href="/class-11-extracurricular.html" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 11
+                    </a>
+                    <a href="/class-10-extracurricular.html" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 10
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-content">
+            <p class="title">
+              Scholorship
+              <i class="fas fa-search-dollar" style="color: hsl(153, 53%,  53%);"></i>
+            </p>
+            <p class="subtitle">
+              Explore resources by class
+            </p>
+            <div class="content">
+              <div class="dropdown is-right is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button is-success" aria-haspopup="true" aria-controls="dropdown-menu" onclick="toggleDropdown(this)">
+                    <span>Select Class</span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu" style="display: none;">
+                  <div class="dropdown-content">
+                    <a href="/class-12-scholarship.html" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 12
+                    </a>
+                    <a href="/class-11-scholarship.html" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 11
+                    </a>
+                    <a href="/class-10-scholarship.html" class="dropdown-item" onmouseover="showDropdown(this.parentNode.parentNode)" onmouseout="hideDropdown(this.parentNode.parentNode)">
+                      Class 10
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="navbar-divider">
+<!--  about-->
+<section class="section">
+  <div class="column has-text-centered">
+    <h1><strong>
+      What we do at HO 🙋‍♂️</strong>  
+    </h1></div>
+  <div class="hero-body">
+    <div class="container has-text-left">
+      <h1 class="title"><strong>Academic</strong>
+        <i class="fas fa-graduation-cap" style="color: hsl(153, 53%,  53%);"></i>
+      </h1>
+      <p>Access the best resources for your studies - Study materials, Online courses, and References - to excel Academically</p>
+    </div>
+    <div class="container has-text-right">
+      <img src="/academic.png" width="300px" height="450px">
+    </div>
+  </div>
+  <div class="hero-body extra-curricular">
+    <div class="container has-text-right">
+      <img src="/extracurricular.png" width="500px" height="800px">
+    </div>
+    <div class="container has-text-left">
+      <h1 class="title"><strong>Extra-Curricular</strong>
+        <i class="fas fa-bullseye" style="color: hsl(153, 53%,  53%);"></i>
+      </h1>
+      <p>Discover diverse activities - Sports, Arts, Volunteering, and Clubs - to develop skills, broaden horizons, and nurture passions beyond the classroom</p>
+    </div>
+  </div>
+  <div class="hero-body">
+    <div class="container has-text-left">
+      <h1 class="title"><strong>Scholarship</strong>
+        <i class="fas fa-search-dollar" style="color: hsl(153, 53%,  53%);"></i>
+      </h1>
+      <p>Find detailed information on a wide range of scholarships in Nepal - eligibility, application procedures, and deadlines - to support your educational journey</p>
+    </div>
+    <div class="container has-text-right">
+      <img src="/scholar.png" width="400px" height="500px">
+    </div>
+  </div>
+</section>
+
+<hr class="navbar-divider">
+<!--  Level  -->
+<section class="hero py-6">
+    <nav class="level">
+        <div class="level-item has-text-centered">
+            <i class="fas fa-user-graduate fa-2x"></i>
+          <div>
+            <p class="title">1,500</p>
+            <p class="heading pl-3"> Students Reached</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <i class="fas fa-university fa-2x"></i> 
+          <div>
+            <p class="title">1</p>
+            <p class="heading pl-3">College Reached</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <i class="fas fa-hands-helping fa-2x"></i> 
+          <div>
+            <p class="title">1</p>
+            <p class="heading pl-3">Organization </p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <i class="fas fa-star fa-2x"></i>
+          <div>
+            <p class="title">9.5/10</p>
+            <p class="heading pl-3"> Feedback</p>
+          </div>
+        </div>
+      </nav>
+      
+    </section>
+
+  
+<!-- Footer -->
+<hr class="navbar-divider">
+<footer class="footer" style="height: 50px;">
+  <div class="content has-text-centered">
+    
+    <div class="social-icons">
+      <a href="https://www.facebook.com/hamroopportunity" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/hamroopportunity" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.twitter.com/hamroopportunity" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitter"></i>
+      </a>
+      
+    </div>
+    <div class="pt-4">
+      <p>
+        <a href="/about.html" target="_blank" rel="noopener noreferrer" ><strong>About</strong></a>
+        &nbsp;&nbsp;
+        <a href="#" target="_blank" rel="noopener noreferrer" ><strong>Join Our Mission</strong></a>
+        &nbsp;&nbsp;
+        <a href="/contact.html" target="_blank" rel="noopener noreferrer"><strong>Contact</strong></a>
+      </p>
+    </div>
+    
+    <!-- <div class="made-with-love has-text-centered pt-3">
+      Made with ❤️ by <strong>DD Twins </strong>
+    </div> -->
+  
+  </div>
+</footer>
+
+<button id="scrollButton" class="scroll-button" onclick="scrollToTop()">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+
+<!-- JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/script.js"></script>
+</body>
+</html>

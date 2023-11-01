@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hamro Opportunity</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>  
+
+<!-- Nav bar -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand custom-navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <img src="/lo.png" width="112" height="28">
+    </a>
+    <!-- <div id="nav-bar-search-icon" class="navbar-item is-hidden-desktop">
+      <button class="button is-white" onclick="toggleSearchOverlay()">
+        <span class="icon is-small has-text-info">
+          <i class="fas fa-search"></i>
+        </span>
+      </button>
+    </div> -->
+    <button class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu"
+      onclick="toggleNavbarMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div id="navbar" class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" onclick="toggleDropdown('class12')">
+          Class 12
+        </a>
+        <div class="navbar-dropdown" id="class12Dropdown">
+          <a class="navbar-item dropdown-toggle" href="/class-12-academic.html">Academic</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-12-extracurricular.html">Extra-Curricular</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-12-scholarship.html">Scholarship</a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" onclick="toggleDropdown('class11')">
+          Class 11
+        </a>
+        <div class="navbar-dropdown" id="class11Dropdown">
+          <a class="navbar-item dropdown-toggle" href="/class-11-academic.html">Academic</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-11-extracurricular.html">Extra-Curricular</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-11-scholarship.html">Scholarship</a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" onclick="toggleDropdown('class10')">
+          Class 10
+        </a>
+        <div class="navbar-dropdown" id="class10Dropdown">
+          <a class="navbar-item dropdown-toggle" href="/class-10-academic.html">Academic</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-10-extracurricular.html">Extra-Curricular</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-10-scholarship.html">Scholarship</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <input class="input" type="text" placeholder="Search">
+          </p>
+          <p class="control">
+            
+              <!-- Add the onclick attribute to the button and specify the JavaScript code directly -->
+              <button class="button is-info" onclick="window.location.href = 'https://cse.google.com/cse?cx=83f5bfe3f22cf4b6e';">
+                Search
+              </button>
+            
+            
+          </p>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Columns -->
+<div class="tile is-ancestor">
+  <div class="tile is-parent">
+    <article class="tile is-child notification custom-notification">
+      <p class="card-header-title is-centered">
+        <a href="/class-12-extracurricular.html" class="tile-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fas fa-angle-left is-left" aria-hidden="true"></i>
+          </span>
+        </a>
+        &emsp;
+        Class-12 | Scholarship
+        &emsp;
+        <a href="/class-12-academic.html" class="tile-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fas fa-angle-right is-right" aria-hidden="true"></i>
+          </span>
+        </a>
+      </p>
+      <div class="content">
+        <!-- Content -->
+        <div class="card-section mt-5">
+          <div class="scrollable-headers">
+            <!-- <header class="card-header" onclick="selectContent('hseb', this)">
+              <p class="card-header-title">
+                hseb
+              </p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-right" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header> -->
+            <!-- Add more header options as needed -->
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent">
+        <article class="tile is-child notification" id="contentDisplay">
+            <p>Currently, there may be limited scholarship opportunities specifically targeted towards students in Class 12. However, it's important to note that scholarships are continually updated and new opportunities may arise in the future. It is recommended for Class 12 students to regularly search for scholarship programs that may be available at the college level, as well as through external organizations or foundations.</p>
+            <br>
+            <p>If you know any then feel free to let us know and join our non-profit mission</p>
+          <!-- <div class="content-block" id="hsebContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class-12 Extra-Scholarship</a>
+                  </li>
+                  <li>
+                    <a href="#">HSEB</a>
+                  </li>
+                </ul>
+              </nav>
+              HSEB Scholarship content is here
+            </div> -->
+          <!-- Add more content blocks for other options -->
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.custom-notification {
+  border-radius: 20px;
+}
+
+.scrollable-headers {
+  max-height: 420px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+
+.card-header.active {
+  background-color: #7ba4e7;
+}
+
+.card-header.active .card-header-title {
+  font-weight: bold;
+}
+
+</style>
+
+<!-- JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+function selectContent(option, element) {
+  // Hide all content blocks
+  $(".content-block").hide();
+
+  // Show the selected content block
+  $("#" + option + "Content").show();
+
+  // Remove the active class from all headers
+  $(".card-header").removeClass("active");
+
+  // Add the active class to the selected header
+  $(element).addClass("active");
+}
+</script>
+<script src="/script.js"></script>
+</body>
+</html>

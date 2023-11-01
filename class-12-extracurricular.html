@@ -1,0 +1,3449 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Class 12 - Extra-Curricular</title>
+  <link rel="icon" href="/title_lo.png" alt="hamroopportunity logo">
+  <meta name="description" content="Hamro Opportunity is a comprehensive platform providing students in Nepal with the best academic, extracurricular, and scholarship resources.">
+  <meta name="keywords" content="academic resources Nepal, study materials Nepal, past exam papers Nepal, online courses Nepal, reference materials Nepal, sports activities Nepal, arts and culture Nepal, volunteering opportunities Nepal, clubs in Nepal, scholarship opportunities Nepal, educational resources Nepal, student support Nepal, academic excellence Nepal, Hamro Opportunity, Nepal">
+  <meta name="author" content="Hamro Opportunity">
+  <link rel="preload" href="/style.css" as="style" />
+  <link rel="preload" href="/script.js" as="script" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+</head>
+<body>
+<!-- Nav bar -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand custom-navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <img src="/lo.png" width="112" height="28" alt="hamroopportunity">
+    </a>
+    <!-- <div id="nav-bar-search-icon" class="navbar-item is-hidden-desktop">
+      <button class="button is-white" onclick="toggleSearchOverlay()">
+        <span class="icon is-small has-text-info">
+          <i class="fas fa-search"></i>
+        </span>
+      </button>
+    </div> -->
+    <button class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu"
+      onclick="toggleNavbarMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div id="navbar" class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" onclick="toggleDropdown('class12')">
+          Class 12
+        </a>
+        <div class="navbar-dropdown" id="class12Dropdown">
+          <a class="navbar-item dropdown-toggle" href="/class-12-academic.html">Academic</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-12-extracurricular.html">Extra-Curricular</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-12-scholarship.html">Scholarship</a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" onclick="toggleDropdown('class11')">
+          Class 11
+        </a>
+        <div class="navbar-dropdown" id="class11Dropdown">
+          <a class="navbar-item dropdown-toggle" href="/class-11-academic.html">Academic</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-11-extracurricular.html">Extra-Curricular</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-11-scholarship.html">Scholarship</a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" onclick="toggleDropdown('class10')">
+          Class 10
+        </a>
+        <div class="navbar-dropdown" id="class10Dropdown">
+          <a class="navbar-item dropdown-toggle" href="/class-10-academic.html">Academic</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-10-extracurricular.html">Extra-Curricular</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item dropdown-toggle" href="/class-10-scholarship.html">Scholarship</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <input class="input" type="text" placeholder="Search" style="border-color: hsl(153, 53%, 53%); color:black;">
+          </p>
+          <p class="control">
+            <button class="button is-success">
+              Search
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Columns -->
+<div class="tile is-ancestor">
+  
+    <div class="tile is-parent">
+    <article class="tile is-child notification custom-notification">
+      <p class="card-header-title is-centered">
+        <a href="/class-12-academic.html" class="tile-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fas fa-angle-left is-left" aria-hidden="true"></i>
+          </span>
+        </a>
+        
+        Class-12 | Extra-Curricular
+      
+        <a href="/class-12-scholarship.html" class="tile-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fas fa-angle-right is-right" aria-hidden="true"></i>
+          </span>
+        </a>
+      </p>
+      
+
+      <div class="content">
+        <!-- Content -->
+        <div class="card-section mt-5">
+          <div class="scrollable-headers">
+            <header class="card-header" onclick="selectContent('sports', this)">
+              <p class="card-header-title">
+                Sports
+              </p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-right" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header>
+            <header class="card-header" onclick="selectContent('music', this)">
+              <p class="card-header-title">
+                Music
+              </p>
+              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-right" aria-hidden="true"></i>
+                </span>
+              </a>
+            </header>
+            <header class="card-header" onclick="selectContent('dance', this)">
+                <p class="card-header-title">
+                  Dance
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('debate', this)">
+                <p class="card-header-title">
+                  Debate and Public Speaking
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('olympiad', this)">
+                <p class="card-header-title">
+                  Olympiad
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('drama', this)">
+                <p class="card-header-title">
+                  Theatre and Drama
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('arts', this)">
+                <p class="card-header-title">
+                  Visual Arts
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('writing', this)">
+                <p class="card-header-title">
+                  Writing and Literature
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('science', this)">
+                <p class="card-header-title">
+                  Science and Technology
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('social', this)">
+                <p class="card-header-title">
+                  Social Service
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('leadership', this)">
+                <p class="card-header-title">
+                  Leadership and Student Council
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('environmental', this)">
+                <p class="card-header-title">
+                  Environmental Clubs
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('chess', this)">
+                <p class="card-header-title">
+                  Chess and Strategy Games
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('photography', this)">
+                <p class="card-header-title">
+                  Photography and Videography
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('entrepreneurship', this)">
+                <p class="card-header-title">
+                  Entrepreneurship
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+              <header class="card-header" onclick="selectContent('languages', this)">
+                <p class="card-header-title">
+                  Foreign Languages
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fas fa-angle-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </header>
+            <!-- Add more header options as needed -->
+          </div>
+        </div>
+      </div>
+    </article>
+    </div>
+
+    <div class="tile is-vertical is-8">
+      <div class="tile">
+        <div class="tile is-parent">
+          <article class="tile is-child notification" id="contentDisplay">
+            <div class="content-block" id="sportsContent" style="display: none;">
+              <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class-12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Sports</a>
+                  </li>
+                </ul>
+               </nav>
+              <!-- Sports content starts here. -->
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="sports.png" width="100%" alt="sports">
+                  </div>
+                </div>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different organization that conduct sports competition.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+          </div>
+          <!-- Sports content ends here. -->
+          
+
+          <!-- music content starts here. -->
+          <div class="content-block" id="musicContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Music</a>
+                  </li>
+                </ul>
+              </nav>
+            <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="music.png" width="100%" alt="Entrepreneurship">
+                  </div>
+                </div>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different organization that conduct entrepreneurship competition and conduct workshops.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Workshops
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      1.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i></td>
+                          <td>Introduction video</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      2.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      3.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+            </div>
+          <!-- music content ends here-->
+
+            <!-- dance content starts here -->
+          <div class="content-block" id="danceContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Dance</a>
+                  </li>
+                </ul>
+              </nav>
+              
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="dance.png" width="100%" alt="dance">
+                  </div>
+                </div><br><br>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different debate competition conducted by different organization. You can find event details like date, location and websites link. We have also added video about those event from the organizer.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Workshops
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      1.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      2.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      3.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+              
+          </div>
+          <!-- dance content ends here -->
+
+          <!-- Debate & public speaking content starts here. -->
+          <div class="content-block" id="debateContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Debate</a>
+                  </li>
+                </ul>
+              </nav>
+              
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="public_speaking.png" width="100%" alt="public speaking & debate">
+                  </div>
+                </div><br><br>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different debate competition conducted by different organization. You can find event details like date, location and websites link. We have also added video about those event from the organizer.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Workshops
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      1.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      2.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      3.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+              
+          </div>
+
+          <!-- Debate content ends here. -->
+          <div class="content-block" id="olympiadContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Olympiad</a>
+                  </li>
+                </ul>
+              </nav>
+              
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="olympiad.png" width="100%" alt="olympiad">
+                  </div>
+                </div><br><br>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different Olympiad competition conducted by different organization. You can find event details like date, location and websites link. We have also added video about those event from the organizer.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  National Astronomy OLympiad
+                  </strong><br><br>
+                  <p>National Astronomy Olympiad (NAO) is an early stage talent hunt program for the school students in Nepal. It’s an annual program for junior (class 8-10) and senior (class 11-12) students in Nepal providing an opportunity to learn communication, collaboration, critical thinking and critical writing to for their personal growth to support their academic career in STEAM field in future. The program has three stages namely the provincial round (entrance exam), national round and final round respectively which will be held between January -July of each year. The final round creates the national merit list for both junior and senior categories for the different regional and international astronomy Olympiads held each year.</p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>January - July</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.nepalastronomicalsociety.org/projects/olympiad/</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Kathmandu</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  International Mathematics Olympiad
+                  </strong><br><br>
+                  <p>The International Mathematics Olympiad (IMO) is an annual nine-hour mathematics competition for high school students worldwide. It is the oldest (founded in 1959) and most prestigious of the International Science Olympiads. The first IMO was held in Romania with seven countries participating. It has since grown to over 100 countries sending over 4,000 students to the annual event. The competition consists of two 4.5-hour exams, each with six problems. The problems range from easy to very difficult and cover various mathematical topics. The competition is open to any student under the age of 20 who has not yet reached their 20th birthday by the 1st of July in the year of the competition.</p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.mathassociationnepal.org.np/program/5/3/</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Kathmandu</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <!-- <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Workshops
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      1.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      2.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      3.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div> -->
+              
+          </div>
+          <!-- olympiad content starts here -->
+
+          <!--  olympiad content ends here -->
+
+          <div class="content-block" id="olympaidContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Olympaid</a>
+                  </li>
+                </ul>
+              </nav>
+              Olympaids content goes here.
+          </div>
+
+          <!-- drama content starts here -->
+          <div class="content-block" id="dramaContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Drama</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="theatre.png" width="100%" alt="Entrepreneurship">
+                  </div>
+                </div>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different organization that conduct entrepreneurship competition and conduct workshops.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Workshops
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      1.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i></td>
+                          <td>Introduction video</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      2.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      3.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+            </div>
+          <!-- drama content ends here -->
+
+          <!-- virtual content starts here -->
+          <div class="content-block" id="artsContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Arts</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="visualarts.png" width="100%" alt="Entrepreneurship">
+                  </div>
+                </div>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different organization that conduct entrepreneurship competition and conduct workshops.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Workshops
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      1.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i></td>
+                          <td>Introduction video</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      2.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      3.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+            </div>
+          <!-- virtual content ends here -->
+
+          <!-- writing content starts here -->
+          <div class="content-block" id="writingContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Writing</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="writing.png" width="100%" alt="Entrepreneurship">
+                  </div>
+                </div>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different organization that conduct entrepreneurship competition and conduct workshops.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Workshops
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      1.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i></td>
+                          <td>Introduction video</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      2.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      3.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+            </div>
+          <!-- writing content ends here -->
+
+          <!-- science and tech content starts here -->
+          <div class="content-block" id="scienceContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Science and Technology</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="science.png" width="100%" alt="Entrepreneurship">
+                  </div>
+                </div>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different organization that conduct entrepreneurship competition and conduct workshops.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Workshops
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      1.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i></td>
+                          <td>Introduction video</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      2.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      3.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+            </div>
+          <!-- science and tech content ends here -->
+
+          <!-- social service content starts here -->
+          <div class="content-block" id="socialContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Social Service</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="social.png" width="100%" alt="Entrepreneurship">
+                  </div>
+                </div>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different organization that conduct entrepreneurship competition and conduct workshops.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Workshops
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      1.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i></td>
+                          <td>Introduction video</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      2.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      3.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+            </div>
+          <!-- social service ends here -->
+
+            <!-- leadership and student councils starts here -->
+          <div class="content-block" id="leadershipContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Leadership</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="leadership.png" width="100%" alt="Entrepreneurship">
+                  </div>
+                </div>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different organization that conduct entrepreneurship competition and conduct workshops.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Workshops
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      1.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i></td>
+                          <td>Introduction video</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      2.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      3.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+            </div>
+           <!-- leadership and student councils ends here -->
+
+           <!-- environment content starts here -->
+          <div class="content-block" id="environmentalContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Environmental Clubs</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="environment.png" width="100%" alt="Entrepreneurship">
+                  </div>
+                </div>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different organization that conduct entrepreneurship competition and conduct workshops.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Workshops
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      1.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i></td>
+                          <td>Introduction video</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      2.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      3.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+            </div>
+          <!-- environment content ends here -->
+
+          <!-- chess content starts here -->
+          <div class="content-block" id="chessContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Chess</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="chess.png" width="100%" alt="Entrepreneurship">
+                  </div>
+                </div>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different organization that conduct entrepreneurship competition and conduct workshops.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Workshops
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      1.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i></td>
+                          <td>Introduction video</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      2.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      3.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+            </div>
+          <!-- chess content ends here -->
+
+          <!-- photography content starts here -->
+          <div class="content-block" id="photographyContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Photography</a>
+                  </li>
+                </ul>
+              </nav>
+             
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="photography.png" width="100%" alt="photography">
+                  </div>
+                </div>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different organization that conduct photography and videography competition</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Photography Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Videography Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+          </div>
+        <!-- Photography content ends here. -->
+
+        <!-- Entrepreneurship content goes here. -->
+          <div class="content-block" id="entrepreneurshipContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Entrepreneurship</a>
+                  </li>
+                </ul>
+              </nav>
+              
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="Entrepreneurship.png" width="100%" alt="Entrepreneurship">
+                  </div>
+                </div>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different organization that conduct entrepreneurship competition and conduct workshops.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Workshops
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      1.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i></td>
+                          <td>Introduction video</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      2.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      3.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+            </div>
+        <!-- Entrepreneurship content ends here. --> 
+          
+        <!-- foreign language content starts here -->
+          <div class="content-block" id="languagesContent" style="display: none;">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">Class 12 Extra-Curricular</a>
+                  </li>
+                  <li>
+                    <a href="#">Foreign Languages</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <img src="foreignlanguage.png" width="100%" alt="Entrepreneurship">
+                  </div>
+                </div>
+                <strong class="title">Introduction</strong><br>
+                <p>Here we have listed different organization that conduct entrepreneurship competition and conduct workshops.</p><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Competitions
+                </strong><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    1.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    2.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+                <div class="container">
+                  <strong class="h1">
+                    3.  The Entrepreneur's Guide For Beginners 2.0
+                  </strong><br><br>
+                  <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                  <div>
+                    <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                      <tr>
+                        <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                        <td>Comming soon</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                        <td>https://www.curiouswe.site/event.html</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                        <td>Lalitpur</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                        <td>Paid</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div><br><br>
+              </div>
+              <div class="container">
+                <strong class="title">
+                  Workshops
+                </strong><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      1.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fab fa-youtube" style="margin-right: 0.5rem; color: red;"></i></td>
+                          <td>Introduction video</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      2.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+                  <div class="container">
+                    <strong class="h1">
+                      3.  The Entrepreneur's Guide For Beginners 2.0
+                    </strong><br><br>
+                    <p>It is the 10 days workshops organizes by Curiouswe - a non-profit organization powered by the passionate minds of IOE Pulchowk Campus. </p><br><br>
+                    <div>
+                      <table class="table is-fullwidth" style="border: none; background-color: transparent;">
+                        <tr>
+                          <td><i class="far fa-calendar-alt" style="margin-right: 0.5rem; color: #FF4500;"></i></td>
+                          <td>Comming soon</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-globe" style="margin-right: 0.5rem; color: #1E90FF;"></i></td>
+                          <td>https://www.curiouswe.site/event.html</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: #008000;"></i></td>
+                          <td>Lalitpur</td>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-coins" style="margin-right: 0.5rem; color: #8A2BE2;"></i></td>
+                          <td>Paid</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div><br><br>
+              </div>
+            </div>
+           <!-- foreign language content sends here -->
+
+          <!-- Add more content blocks for other options -->
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+
+
+<footer class="footer" style="height: 50px;">
+  <div class="content has-text-centered">
+    
+    <div class="social-icons">
+      <a href="https://www.facebook.com/hamroopportunity" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/hamroopportunity" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.twitter.com/hamroopportunity" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitter"></i>
+      </a>
+      
+    </div>
+    <div class="pt-4">
+      <p>
+        <a href="/about.html"  rel="noopener noreferrer"><strong>About</strong></a>
+        &nbsp;&nbsp;
+        <a href="#"  rel="noopener noreferrer" ><strong>Join Our Mission</strong></a>
+        &nbsp;&nbsp;
+        <a href="/contact.html"  rel="noopener noreferrer" ><strong>Contact</strong></a>
+      </p>
+    </div>
+    
+    <!-- <div class="made-with-love has-text-centered pt-3">
+      Made with ❤️ by <strong>DD Twins </strong>
+    </div> -->
+  
+  </div>
+</footer>
+
+<button id="scrollButton" class="scroll-button" onclick="scrollToTop()">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<style>
+.custom-notification {
+  border-radius: 20px;
+}
+
+.scrollable-headers {
+  max-height: 420px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+
+
+.card-header.active {
+  background-color: #7ba4e7;
+}
+
+.card-header.active .card-header-title {
+  font-weight: bold;
+}
+
+
+</style>
+
+<!-- JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+$(document).ready(function() {
+      // Trigger English header and content on page load
+      selectContent('sports', '#sportsLink');
+    });
+   
+
+    function selectContent(option, element) {
+      // Hide all content blocks
+      $(".content-block").hide();
+
+      // Show the selected content block
+      $("#" + option + "Content").show();
+
+      // Remove the active class from all headers
+      $(".card-header").removeClass("active");
+
+      // Add the active class to the selected header
+      $(element).addClass("active");  
+    }
+
+</script>
+<!-- javascript for modals -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+  $(document).ready(function() {
+    // Handle click event on "Diwas" link
+    $("#diwasLink").click(function() {
+      showModal("Diwas", "This channel contain one playlist named '##' for creative Writing. Here you will find the content covering Essay, News Story, News Article and so on.<br><br> <a href='#' target='_blank'><button class='button is-info is-rounded'>Youtube Playlist</button></a>");
+    });
+
+    // Handle click event on "Dipesh" link
+    $("#dipeshLink").click(function() {
+      showModal("Modal title", "Content for Dipesh");
+    });
+
+    // Handle click event on "Hero" link
+    $("#heroLink").click(function() {
+      showModal("Modal title", "Content for Hero");
+    });
+
+    // Close modal when the close button is clicked
+    $(".modal .delete, .modal .button").click(function() {
+      $(".modal").removeClass("is-active");
+    });
+  });
+
+  // Function to show the modal
+  function showModal(title, content) {
+    $(".modal-card-title").text(title);
+    $(".modal-card-body").html(content);
+    $(".modal").addClass("is-active");
+  }
+</script>
+<script src="/script.js"></script>
+</body>
+</html>

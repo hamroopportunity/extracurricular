@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @media screen and (max-width: 768px) {
+      .navbar-menu {
+        display: none;
+      }
+
+      .navbar-brand {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-brand .navbar-item:first-child {
+        margin-right: 90px;
+      }
+
+      #nav-bar-search-icon {
+        margin-left: auto;
+      }
+
+      .navbar.is-active .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+
+      .navbar.is-active .navbar-menu .navbar-start {
+        padding: 1rem;
+      }
+
+      .navbar.is-active .navbar-dropdown {
+        display: none;
+      }
+
+      .navbar.is-active .navbar-item.has-dropdown.is-hoverable .navbar-dropdown {
+        display: block;
+        position: static;
+        width: 100%;
+      }
+
+      .navbar-burger {
+        border-color: #333;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .navbar-burger span {
+        background-color: #333;
+      }
+
+      .has-green-border input {
+        border-color: #2ecc71;
+      }
+
+      /* Dropdown styles */
+      .navbar-item.has-dropdown {
+        position: relative;
+      }
+
+      .navbar-dropdown {
+        display: none;
+        position: relative;
+        z-index: 1;
+        min-width: 100%;
+        padding: 0.5rem 0;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+
+      .navbar-item:hover .navbar-dropdown,
+      .navbar-item.is-active .navbar-dropdown {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .navbar-divider {
+        margin: 0.5rem 0;
+        border-color: #dbdbdb;
+      }
+
+      .navbar-item.dropdown-toggle {
+        padding: 0.375rem 1rem;
+        white-space: nowrap;
+      }
+    }
+
+    .has-green-border {
+      border-color: #23d160 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="/lo.png" width="112" height="28">
+      </a>
+      <!-- <div id="nav-bar-search-icon" class="navbar-item is-hidden-desktop">
+        <button class="button is-white" onclick="toggleSearchOverlay()">
+          <span class="icon is-small has-text-info">
+            <i class="fas fa-search"></i>
+          </span>
+        </button>
+      </div> -->
+      <button class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu"
+        onclick="toggleNavbarMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div id="navbar" class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" onclick="toggleDropdown('class12')">
+            Class 12
+          </a>
+          <div class="navbar-dropdown" id="class12Dropdown">
+            <a class="navbar-item dropdown-toggle">Academic</a>
+            <a class="navbar-item dropdown-toggle">Extra-Curricular</a>
+            <a class="navbar-item dropdown-toggle">Scholarship</a>
+            <hr class="navbar-divider">
+            <a class="navbar-item dropdown-toggle">Volunteer</a>
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" onclick="toggleDropdown('class11')">
+            Class 11
+          </a>
+          <div class="navbar-dropdown" id="class11Dropdown">
+            <a class="navbar-item">Academic</a>
+            <a class="navbar-item">Extra-Curricular</a>
+            <a class="navbar-item">Scholarship</a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">Volunteer</a>
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" onclick="toggleDropdown('class10')">
+            Class 10
+          </a>
+          <div class="navbar-dropdown" id="class10Dropdown">
+            <a class="navbar-item">Academic</a>
+            <a class="navbar-item">Extra-Curricular</a>
+            <a class="navbar-item">Scholarship</a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">Volunteer</a>
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" onclick="toggleDropdown('class9')">
+            Class 9
+          </a>
+          <div class="navbar-dropdown" id="class9Dropdown">
+            <a class="navbar-item">Academic</a>
+            <a class="navbar-item">Extra-Curricular</a>
+            <a class="navbar-item">Scholarship</a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">Volunteer</a>
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" onclick="toggleDropdown('class8')">
+            Class 8
+          </a>
+          <div class="navbar-dropdown" id="class8Dropdown">
+            <a class="navbar-item">Academic</a>
+            <a class="navbar-item">Extra-Curricular</a>
+            <a class="navbar-item">Scholarship</a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">Volunteer</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <input class="input" type="text" placeholder="Search">
+            </p>
+            <p class="control">
+              <button class="button is-info">
+                Search
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+
+  <script>
+    function toggleNavbarMenu() {
+      const navbarBurger = document.querySelector('.navbar-burger');
+      const navbarMenu = document.querySelector('.navbar-menu');
+
+      navbarBurger.classList.toggle('is-active');
+      navbarMenu.classList.toggle('is-active');
+    }
+
+    function toggleDropdown(id) {
+      const dropdown = document.getElementById(id + 'Dropdown');
+      dropdown.classList.toggle('is-active');
+    }
+
+
+
+  </script>
+</body>
+
+</html>
